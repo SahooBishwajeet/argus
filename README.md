@@ -1,11 +1,11 @@
-# WiFi Monitor
+# Argus
 
 A tool to monitor WiFi uptime and bandwidth over time.
 
 ## Installation
 
 ```bash
-pip install wifi-monitor
+pip install argus
 ```
 
 ## Usage
@@ -13,27 +13,27 @@ pip install wifi-monitor
 To start monitoring with default settings:
 
 ```bash
-wifi-monitor
+argus
 ```
 
 Options:
 
 - `--interval`: Time between checks in seconds (default: 300)
 - `--duration`: How long to monitor in hours (default: 24)
-- `--log`: Path to the CSV log file (default: wifi_monitor.csv)
-- `--output`: Path to save the graph (default: wifi_monitoring_report.png)
+- `--log`: Path to the CSV log file (default: argus.csv)
+- `--output`: Path to save the graph (default: argus_report.png)
 - `--analyze-only`: Only analyze existing data without monitoring
 
 Example with custom settings:
 
 ```bash
-wifi-monitor --interval 600 --duration 48 --log my_log.csv --output my_report.png
+argus --interval 600 --duration 48 --log my_log.csv --output my_report.png
 ```
 
 To only analyze existing data:
 
 ```bash
-wifi-monitor --analyze-only --log my_log.csv
+argus --analyze-only --log my_log.csv
 ```
 
 ## Features

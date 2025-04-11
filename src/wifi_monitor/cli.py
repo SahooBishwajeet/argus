@@ -1,12 +1,14 @@
-"""Command-line interface for wifi-monitor."""
+"""Command-line interface for argus."""
 
 import argparse
 from .core import WiFiMonitor
 
 
 def main():
-    """Run the WiFi monitor command-line interface."""
-    parser = argparse.ArgumentParser(description="WiFi Uptime and Bandwidth Monitor")
+    """Run the Argus WiFi monitor command-line interface."""
+    parser = argparse.ArgumentParser(
+        description="Argus: WiFi Uptime and Bandwidth Monitor"
+    )
     parser.add_argument(
         "--interval",
         type=int,
@@ -22,14 +24,14 @@ def main():
     parser.add_argument(
         "--log",
         type=str,
-        default="wifi_monitor.csv",
-        help="Path to log file (default: wifi_monitor.csv)",
+        default="argus.csv",
+        help="Path to log file (default: argus.csv)",
     )
     parser.add_argument(
         "--output",
         type=str,
-        default="wifi_monitoring_report.png",
-        help="Path to output file for plots (default: wifi_monitoring_report.png)",
+        default="argus_report.png",
+        help="Path to output file for plots (default: argus_report.png)",
     )
     parser.add_argument(
         "--analyze-only",

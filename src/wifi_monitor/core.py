@@ -16,8 +16,8 @@ class WiFiMonitor:
     def __init__(
         self,
         check_interval=300,
-        log_file="wifi_monitor.csv",
-        output_file="wifi_monitoring_report.png",
+        log_file="argus.csv",
+        output_file="argus_report.png",
     ):
         self.check_interval = check_interval
         self.log_file = log_file

@@ -14,8 +14,8 @@ class WiFiMonitor:
     def __init__(
         self,
         check_interval=300,
-        log_file="wifi_monitor.csv",
-        output_file="wifi_monitoring_report.png",
+        log_file="argus.csv",
+        output_file="argus_report.png",
     ):
         self.check_interval = check_interval
         self.log_file = log_file
@@ -377,14 +377,14 @@ if __name__ == "__main__":
     parser.add_argument(
         "--log",
         type=str,
-        default="wifi_monitor.csv",
-        help="Path to log file (default: wifi_monitor.csv)",
+        default="argus.csv",
+        help="Path to log file (default: argus.csv)",
     )
     parser.add_argument(
         "--output",
         type=str,
-        default="wifi_monitoring_report.png",
-        help="Path to output file for plots (default: wifi_monitoring_report.png)",
+        default="argus_report.png",
+        help="Path to output file for plots (default: argus_report.png)",
     )
     parser.add_argument(
         "--analyze-only",

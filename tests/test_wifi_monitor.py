@@ -1,15 +1,15 @@
-"""Basic tests for the wifi-monitor package."""
+"""Basic tests for the Argus package."""
 
 import pytest
-from wifi_monitor.core import WiFiMonitor
+from argus.core import WiFiMonitor
 
 
 def test_wifi_monitor_init():
     """Test that the WiFiMonitor class can be initialized."""
     monitor = WiFiMonitor()
     assert monitor.check_interval == 300
-    assert monitor.log_file == "wifi_monitor.csv"
-    assert monitor.output_file == "wifi_monitoring_report.png"
+    assert monitor.log_file == "argus.csv"
+    assert monitor.output_file == "argus_report.png"
 
     # Test with custom parameters
     custom_monitor = WiFiMonitor(

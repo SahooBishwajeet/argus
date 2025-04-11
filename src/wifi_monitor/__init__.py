@@ -1,4 +1,4 @@
-"""WiFi Uptime and Bandwidth Monitor.
+"""Argus: WiFi Uptime and Bandwidth Monitor.
 
 A tool to monitor WiFi uptime and bandwidth over time.
 """
