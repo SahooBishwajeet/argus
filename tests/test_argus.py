@@ -4,7 +4,7 @@ import pytest
 from argus.core import WiFiMonitor
 
 
-def test_wifi_monitor_init():
+def test_argus_init():
     """Test that the WiFiMonitor class can be initialized."""
     monitor = WiFiMonitor()
     assert monitor.check_interval == 300
