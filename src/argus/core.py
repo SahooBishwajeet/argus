@@ -1,4 +1,4 @@
-"""WiFi Monitor core functionality."""
+"""Core functionality for Argus WiFi monitoring."""
 
 import time
 import datetime
@@ -7,7 +7,6 @@ import socket
 import csv
 import pandas as pd
 import matplotlib.pyplot as plt
-from collections import defaultdict
 import os
 import json
 

@@ -1,14 +1,13 @@
-"""Command-line interface for argus."""
+#!/usr/bin/env python
+"""Command-line interface for Argus."""
 
 import argparse
-from .core import WiFiMonitor
+from argus.core import WiFiMonitor
 
 
 def main():
-    """Run the Argus WiFi monitor command-line interface."""
-    parser = argparse.ArgumentParser(
-        description="Argus: WiFi Uptime and Bandwidth Monitor"
-    )
+    """Run the Argus WiFi monitor CLI."""
+    parser = argparse.ArgumentParser(description="WiFi Uptime and Bandwidth Monitor")
     parser.add_argument(
         "--interval",
         type=int,

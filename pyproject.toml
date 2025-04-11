@@ -1,3 +1,30 @@
 [build-system]
 requires = ["setuptools>=42", "wheel"]
 build-backend = "setuptools.build_meta"
+
+[project]
+name = "argus"
+version = "1.0.0"
+description = "Argus: WiFi Uptime and Bandwidth Monitor"
+readme = "README.md"
+authors = [
+    {name = "SahooBishwajeet", email = "biswa.2004.bdk@gmail.com"}
+]
+license = {text = "MIT"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
+requires-python = ">=3.7"
+dependencies = [
+    "speedtest-cli",
+    "pandas",
+    "matplotlib",
+]
+
+[project.scripts]
+argus = "argus.cli:main"
