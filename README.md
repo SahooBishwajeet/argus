@@ -5,7 +5,7 @@ A tool to monitor WiFi uptime and bandwidth over time.
 ## Installation
 
 ```bash
-pip install argus
+pip install argus-wifi
 ```
 
 ## Usage
