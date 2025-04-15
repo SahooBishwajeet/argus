@@ -25,6 +25,7 @@ dependencies = [
     "speedtest-cli",
     "pandas",
     "matplotlib",
+    "psutil",
 ]
 
 [project.scripts]
